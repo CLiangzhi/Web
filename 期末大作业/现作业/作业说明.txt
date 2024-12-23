@@ -1,0 +1,1 @@
+这个文件夹里面右两个html文件，website.html是按照给予的jpg和psd文件写的网页，只用到了website.css文件；BaoTuWebsite.html是在website.html的基础上加入了轮播图，用到了lunbo.css、swiper-bundle.min.css和swiper-bundle.min.js文件。

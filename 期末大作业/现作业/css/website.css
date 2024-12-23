@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.fluid {
+    width: 100%;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+#header {
+    height: 100px;
+    position: relative;
+}
+
+#header nav ul {
+    position: absolute;
+    top: 40%;
+    right: 18.7%;
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    font-size: 1em;
+    font-family: '59 -regular';
+}
+
+#header nav ul li a {
+    color: #000;
+}
+
+#header nav ul li {
+    width: 100px;
+    height: 30px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+#header nav ul li:hover {
+    background-color: #1158e8;
+    transition: all 0.5s;
+    text-align: center;
+    border-radius: 50px;
+}
+
+#header .logo {
+    position: absolute;
+    top: 39.2%;
+    left: 145px;
+    z-index: 2;
+}
+
+#banner {
+    background: url(../images/banner-bottom.png) no-repeat;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+
+#banner .banner-top {
+    height: 600px;
+    z-index: 2px;
+}
+#banner .banner-text {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    width: 500px;
+    height: 200px;
+}
+
+#banner .banner-text .banner-title {
+    font-family: '59 -regular';
+    font-size: 2.5em;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: -15%;
+    left: 22%;
+    z-index: 2;
+}
+
+#banner .banner-text .banner-p1 {
+    font-family: '59 -regular';
+    font-size: 1.75em;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 9%;
+}
+
+#banner .banner-text .banner-p2 {
+    font-family: '58 -regular';
+    font-size: 1.1em;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 55%;
+    left: 21%;
+    width: 300px;
+}
+
+
+#mission p {
+    margin-top: 30px;
+}
+
+#mission .introduce1 {
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    font-family: '59 -regular';
+    text-align: center;
+    width: 375px;
+    height: 200px;
+}
+
+.in-h3 {
+    font-size: 2.5em;
+    color: #1158e8;
+}
+
+.in-p {
+    font-size: 1.25em;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.inhr {
+    margin: 0 auto;
+    width: 80px;
+    border: 3px solid #1158e8;
+}
+
+#mission .solution {
+    position: absolute;
+    top: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#mission .solution .left, .right {
+    flex: 1;
+}
+
+#mission .solution .right {
+    margin-left: 40px;
+    height: 500px;
+}
+
+#mission .solution h3 {
+    margin: 40px 0;
+    font-size: 50px;
+    font-family: '59 -regular';
+}
+
+#mission .solution p {
+    color: #999999;
+    font-size: 20px;
+    font-family: '58 -regular';
+}
+
+#mission .solves {
+    position: absolute;
+    top: 950px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#mission .solves .solve1, .solve2, .solve3 {
+    flex: 1;
+    height: 540px;
+    width: 450px;
+    box-shadow: 10px 10px 20px #999999;
+}
+
+#mission .solves .solve1 {
+    margin-right: 10px;
+}
+
+#mission .solves .solve2 {
+    margin: 0 10px;
+}
+
+#mission .solves .solve3 {
+    margin-left: 10px;
+}
+
+#mission .bottom {
+    margin-top: 45px;
+}
+
+.bottom h4 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bottom p {
+    text-align: center;
+    margin: 0 auto;
+    width: 280px;
+}
+
+#mission .introduce2 {
+    position: absolute;
+    top: 1600px;
+    left: 500px;
+    font-family: '59 -regular';
+    text-align: center;
+    width: 375px;
+    height: 200px;
+}
+
+#mission .convenient {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 1900px;
+    text-align: center;
+}
+
+#mission .convenient img {
+    width: 125px;
+}
+
+#mission .convenient .con1, .con2, .con3, .con4 {
+    flex: 1;
+    height: 450px;
+    width: 250px;
+}
+
+#mission .convenient .con1 {
+    margin-right: 60px;
+}
+
+#mission .convenient .con2, .con3 {
+    margin: 0 60px;
+}
+
+#mission .convenient .con4 {
+    margin-left: 60px;
+}
+
+#footer {
+    position: absolute;
+    top: 3100px;
+    height: 500px;
+    background-color: #000;
+    color: #fff;
+}
+
+.mid {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer .mid .navs {
+    flex: 3;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footer .mid .navs .footer-info p {
+    margin: 130px 0 50px 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#footer .mid .navs .footer-info ul li {
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: lighter;
+}
+
+#footer .mid .footer-code {
+    flex: 1;
+    text-align: center;
+    margin-top: 160px;
+}
+
+#footer .navs .footer-info {
+    flex: 1;
+    text-align: center;
+}
+
+#footer .footer-code img {
+    width: 150px;
+}
+
+#footer .mid .footer-code .bottom p {
+    margin-top: 30px;
+    width: 90px;
+}
