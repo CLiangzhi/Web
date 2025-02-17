@@ -1,0 +1,12 @@
+/*对界面中所有元素都设为红色*/
+:root {
+    color: red;
+}
+/*将div标签中除了p标签之外的标签的文字设为绿色*/
+div *:not(p) {
+    color: green;
+}
+/*将作为某标签的唯一子元素strong字体设为蓝色*/
+strong:only-child {
+    color: blue;
+}

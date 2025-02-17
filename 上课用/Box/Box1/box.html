@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024年9月25日</title>
+    <style>
+        /*对界面中所有元素都设为红色*/
+        :root {
+            color: red;
+        }
+
+        /*将div标签中除了p标签之外的标签的文字设为绿色*/
+        div *:not(p) {
+            color: green;
+        }
+
+        /*将作为某标签的唯一子元素strong字体设为蓝色*/
+        strong:only-child {
+            color: blue;
+        }
+
+        /*为了分辨，将字号设大*/
+        strong {
+            font-size: 48px;
+        }
+        /*为元素选择器相当于加了一个结构，作为行内元素*/
+        /*行内元素转换为块级元素：用display：block；即可*/
+        p::before{
+            content: "山东理工大学：";
+            width: 200px;
+            height:50px;
+            background-color: #ccc;
+            display: block;
+        }
+        h3::after{
+            content: url(image/ciqi.png);
+        }
+        /*写某个元素里面的第几个子元素要有空格*/
+        p :nth-child(2)
+        {
+            color:red;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <!-- <h2>《赠汪伦》</h2>
+
+    <div>
+        <p>李白乘舟将欲行，</p>
+        <h2>忽闻岸上踏歌声。</h2>
+    </div>
+
+    <h2>
+        桃花
+        <strong>潭</strong>
+        水
+        <strong>深</strong>
+        千尺，
+    </h2>
+
+    <h3>
+        不及
+        <strong>汪伦</strong>
+        送我情。
+        <br>
+    </h3>
+ -->
+ <p>dsfsg <strong>sdhfgasdbjf</strong> <span>fdhasfgd</span> <em>dsfdsf</em></p>
+</body>
+
+</html>
