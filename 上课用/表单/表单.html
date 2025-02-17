@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form2023.css">
+</head>
+<body>
+    <div>
+        <img src="images/tree.jpg" alt="" class="tree">
+        <!-- action代表让谁处理这个数据 -->
+        <form action="#" method="post" class="contact_form">
+            <ul>
+                <li class="usually">
+                    <h2>用户注册</h2>
+                </li>
+                <li class="usually">
+                    <span>昵称： </span><input type="text" name="nc" id="name" placeholder="张三" required>
+                    
+                </li>
+                <li class="usually">
+                    <span>密码： </span><input type="password" name="pw" id="pw" required>
+                    
+                </li>
+                <li class="usually">
+                    <span>注册邮箱： </span><input type="email" name="email" id="email" required>
+                    
+                </li>
+                <li class="spacial">
+                    <span>性别</span><input type="radio" name="xb" id="male">
+                        <label for="male">男</label>
+                        <input type="radio" name="xb" id="female">
+                        <label for="female">女</label> 
+                        <!-- 单选框的name属性需要相同 -->
+                </li>
+                <li class="usually">
+                    <span>年龄： </span> <input type="number" name="age" id="age" min="0" max="120" required>
+                    
+                </li>
+                <li class="special">
+                    <span>兴趣爱好： </span><input type="checkbox" name="interest" id="football">
+                        <label for="football">足球</label>
+                        <input type="checkbox" name="interest" id="basketball">
+                        <label for="basketball">篮球</label>
+                        <input type="checkbox" name="interest" id="swim">
+                        <label for="swim">游泳</label>
+                        <input type="checkbox" name="interest" id="sing">
+                        <label for="sing">唱歌</label>
+                        <input type="checkbox" name="interest" id="run">
+                        <label for="run">跑步</label>
+                        <input type="checkbox" name="interest" id="yoga">
+                        <label for="yoga">瑜伽</label>
+                </li>
+                <li class="usually">
+                    <span>自我介绍： </span><textarea name="" id="" cols="30" rows="10" placeholder="Please enter your message" required></textarea>
+                </li>
+                <li class="usually"><button type="submit">立即注册</button></li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>

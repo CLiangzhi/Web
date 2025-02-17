@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+*:focus{
+    outline: none;
+}
+.contact_form{
+    width: 65%;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+}
+.tree{
+    position:absolute;
+    bottom: 20%;
+    left: 15%;
+}
+.contact_form ul{
+    width: 80%;
+    /* border: 1px solid ; */
+}
+.contact_form ul li{
+    border-bottom: 1px solid #eee;
+    padding: 14px;
+}
+.contact_form ul li:first-child,.contact_form ul li:last-child{
+    border-bottom: 1px solid #777;
+}
+.contact_form ul li:first-child{
+    padding-bottom: 12px;
+}
+.contact_form span{
+    width: 150px;
+    display: inline-block;
+}
+.usually input{
+    height: 20px;
+    width: 220px;
+    padding: 5px 8px;
+}
+.usually textarea{
+    width: 300px;
+    padding: 8px;
+}
+.usually button{
+    margin-left: 158px;
+}
+.special input{
+    width: 40px;
+    height: 15px;
+}
+.usually input,.usually textarea{
+    background: url(../images/attention.png) no-repeat 98% center;
+    border: 1px solid #aaa;
+    box-shadow: 0 0 3px #ccc, 0 10px 15px #eee;
+    border-radius: 2px;
+}
+.usually input:focus:invalid,.usually textarea:focus:invalid{
+    background: url(../images/warn.png) no-repeat 98% center;
+    border-color: #b03535;
+    box-shadow: 0 0 5px #d45252, 0 10px 15px #eee;
+    padding-right: 70px;
+    transition: all 0.5s;
+}
+.usually input:required:valid,.usually textarea:required:valid{
+    background: url(../images/right.png) no-repeat 98% center;
+    border-color: #28921f;
+    box-shadow: 0 0 5px #5cd053;
+    padding-right: 70px;
+    transition: all 0.5s;
+}
+button{
+    background: linear-gradient(to top,#68b12e,#50911e);
+    color: #fff;
+    padding: 6px 20px;
+    font-weight: bold;
+    border: 1px solid #5d992d;
+    box-shadow: 0 1px 0 #9fd574 inset;
+    text-shadow: 0 -1px 0 #396715;
+    border-radius: 3px;
+}
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+button:active{
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset;
+}
+/*去掉密码里的小眼睛图标*/
+/*
+对IE/Edge浏览器有效 
+input[type="password"]::-ms-reveal {
+    display: none;  
+}
+对Chrome/Safari有效 
+input[type="password"]::-webkit-contacts-auto-fill-button {
+    display: none;  
+}
+对Chrome/Safari有效 
+input[type="password"]::-webkit-password-field {
+    -webkit-appearance: none;  
+}
+*/
+input[type="password"]::-ms-reveal {
+    display: none;
+}
+/*去掉年龄框里的上下箭头*/
+/* 
+针对所有现代浏览器 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+对Firefox有效 
+input[type="number"] {
+    -moz-appearance: textfield;  
+}
+*/
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+/*
+-ms、-o、-moz、-webkit 是浏览器厂商前缀（Vendor Prefixes），它们用于CSS中，以指示某个CSS属性或伪元素是由特定浏览器厂商实现的实验性或专有功能。这些前缀帮助开发者在不同浏览器中实现兼容性，因为不同的浏览器可能对同一CSS特性有不同的支持程度。
+
+以下是各个前缀的含义：
+
+-webkit-：这是Webkit引擎的前缀，Webkit是一个开源的浏览器引擎，最初由苹果公司开发。它被用于Safari浏览器以及早期的Chrome浏览器。现在，大多数基于Chromium的浏览器都使用这个前缀。
+
+-moz-：这是Mozilla的前缀，用于Firefox浏览器。Mozilla是Firefox浏览器的开发组织。
+
+-o-：这是Opera浏览器的前缀。Opera浏览器曾经使用Presto引擎，后来转向了Blink引擎（与Chrome相同），因此这个前缀现在较少见到。
+
+-ms-：这是Microsoft的前缀，用于Internet Explorer浏览器。随着Edge浏览器的推出和对Chromium引擎的使用，这个前缀的使用也在减少。
+
+这些前缀通常用于CSS属性的名称中，以启用特定浏览器的专有功能。例如，-webkit-transform 用于在基于Webkit的浏览器中启用CSS变换。
+
+随着时间的推移，浏览器厂商前缀的使用已经减少，因为浏览器之间的兼容性越来越好，许多CSS特性已经成为标准，不再需要前缀。然而，在处理旧代码或者需要兼容旧浏览器时，这些前缀仍然可能需要使用。
+*/
