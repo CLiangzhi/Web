@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.fluid{
+    width: 100%;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+.clear{
+    clear: both;
+}

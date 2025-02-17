@@ -1,0 +1,24 @@
+
+.container h2{
+    font-size: 48px;
+    color: #af201c;
+    line-height: 48px;
+    margin-top: 140px;
+    text-align: center;
+}
+.container .main{
+    background-color: rgba(0,0,0,0.5);
+    margin-top: 75px;
+    padding: 38px;
+}
+.container .main .text{
+    font-size: 24px;
+    line-height: 48px;
+    color: #fff;
+    text-align: justify;
+}
+#introduce{
+    background-image: url(../images/guc3.png);
+    background-size: cover;
+    height: 2000px;
+}
