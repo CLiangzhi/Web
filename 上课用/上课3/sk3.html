@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024年09月18日</title>
+    <style>
+        span,
+        p {
+            /* 设置段落宽度为200px */
+            width: 200px;
+            /* 设置段落高度为60px */
+            height: 60px;
+            /* 设置段落边框为1px实线红色 */
+            border: 1px solid red;
+            /* 设置段落内元素水平居中 
+            justify-content: center;
+             设置段落内元素垂直居中 
+            align-items: center;*/
+            text-align: center;
+            /* 设置行高为60像素 */
+            line-height: 60px;
+            /* 设置外边距为0，自动居中,使用时要求提前设置了宽度 */
+            margin: 0 auto;
+            /* 设置文本的阴影效果，
+            第一个参数为阴影的横向偏移量，正值会使阴影向右偏移，负值会使阴影向左偏移
+            第二个参数为阴影的纵向偏移量，正值会使阴影向下偏移，负值会使阴影向上偏移
+            第三个参数为阴影的模糊半径值越大，阴影越模糊，
+            第四个参数为阴影的颜色 
+            */
+            text-shadow: -10px -10px 5px red, 15px 15px 5px green;
+            font-size: 24px;
+        }
+
+        /* 利用标签指定式选择器设置p标签的样式 权重为1+10=11*/
+        p.a1 {
+            text-shadow: -10px -10px 5px red;
+        }
+
+        .a1 {
+            font-size: 36px;
+        }
+
+        div p {
+            color: blue;
+        }
+
+        /*或者div.a1 p或者.a1 p*/
+    </style>
+    <link rel="icon" href="../dog.ico" type="image/x-icon">
+</head>
+
+<body>
+    <p>山东理工大学</p>
+    <br>
+    <span>山东理工大学</span>
+    <!--
+        p与span标签是不一样的标签
+        p、div是块元素，span是行内元素，行内元素不具备宽高属性
+    -->
+    <br>
+    <p class="a1">计算机学院</p>
+    <div class="a1">数学学院
+        <p>计算数学
+            <!--继承性-->
+            <span>实验</span>
+        </p>
+    </div>
+
+</html>
