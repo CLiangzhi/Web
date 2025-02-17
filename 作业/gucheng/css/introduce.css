@@ -1,0 +1,52 @@
+*{
+    /*外边距 0*/
+    margin: 0;
+    /*内边距 0*/
+    padding: 0;
+}
+
+p {
+    font-size: 48px;
+    color: #af201c;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 500px;
+    /*
+    这一句的最后一个参数设置透明度
+    background-color: rgba(211, 16, 20,0.5);
+    */
+}
+div.a1{
+    width: 1000px;
+    background-color: rgba(151,151,151,0.6);
+    /*设置外边距*/
+    margin-top: 65px;
+    /*设置内上边距*/
+    padding-top: 105px;
+    /*设置内左边距*/
+    padding-left: 25px;
+    /*设置内右边距*/
+    padding-right: 25px;
+    /* 设置行高为48px */
+    line-height: 48px;
+    /* 设置文本对齐方式为两端对齐 */
+    text-align: justify;
+    /* 设置文本缩进为2px */
+    text-indent: 2px;
+    /* 设置字体大小为24px */
+    font-size: 24px;
+    /* 设置文本颜色为aliceblue */
+    color: aliceblue;
+}
+.a1{
+    /*行内元素转换为块级元素*/
+    display: block;
+    margin: 0 auto;
+}
+body{
+    background-image: url(../image/guc2.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size:  cover;
+} 
