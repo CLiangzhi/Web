@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../人工智能实验室"
+		},
+		{
+			"path": "../../../../数据结构"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.tcc": "cpp",
+			"forward_list": "cpp",
+			"list": "cpp",
+			"regex": "cpp"
+		}
+	}
+}
