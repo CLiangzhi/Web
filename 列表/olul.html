@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表的学习</title>
+</head>
+
+<body>
+    <!--
+        7.列表标签
+        （1）。有序列表：按顺序排列   可嵌套
+        有序列表是一列项目，列表项目使用数字进行标记，有序列表始于<ol>标签，每个列表项始于<li>标签
+            例如：
+            <ol>
+                <li>是我啊<li>
+                <li>是你啊<li>
+            <ol>
+        <ol>标签的属性type拥有的选项：（也就是把前面的1234改成什么）
+            有：1，a，A，I(罗马字母(用大写I表示))，i
+        (2).无序列表   <ul>   同样也可以嵌套
+            此列表利用粗体圆点进行标记
+            type属性拥有以下属性：
+            disc表示小圆点     circle表示空心圆     square表示小方块     none表示不显示
+            作用：除了做列表来用，还可以用来做导航栏
+            可以利用  ul>li*n  来快速生成需要的li数量  n代表数量
+    -->
+    <br>
+    <p>有序列表：</p>
+    <ol type="a">
+        <li>蔬菜：</li>
+        <ol>
+            <p>蔬菜：</p>
+            <li>苹果</li>
+            <li>橘子</li>
+            <li>香蕉</li>
+            <li>火龙果</li>
+        </ol>
+    </ol>
+    <br>
+    <p>无序列表：</p>
+    <ul type="disc">
+        <li>可乐</li>
+        <li>橙汁</li>
+    </ul>
+    <ul>
+        <li>试一下两个一起嵌套</li>
+        <ol>
+            <li>成功了哎！</li>
+        </ol>
+    </ul>
+</body>
+
+</html>
