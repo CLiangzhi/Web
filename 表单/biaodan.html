@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单的学习</title>
+</head>
+
+<body>
+    <ol type="I">
+        <li>
+            表单内容介绍：
+        </li>
+        <ol>
+            <li>
+                表单的格式：
+                <br>
+                <p>
+                    "<" form action="url" method="" get|post name="myform" ">" <br>(写的时候去掉左右两边的两对双引号)
+                </p>
+            </li>
+            <li>
+                属性说明:
+                <br>
+                <p>action 是服务器名称<br>name 是表单名称</p>
+            </li>
+            <li>
+                method中get与post的区别:
+                <br>
+                <p>
+                    数据提交方式上,get提交的数据 url(服务器)能够看到,而post提交的则看不到
+                    <br>get一般用于提交少量的数据,post用于提交大量的数据
+                </p>
+            </li>
+            <li>
+                表单的三要素：
+                <ol type="a">
+                    <li>表单标签：form标签</li>
+                    <li>表单域：input单标签</li>
+                    <li>表单按钮：input单标签或者是button双标签</li>
+                </ol>
+                <p>如果想要表单按钮,那么第一个input是代表表单域,第二个代表表单的按钮,但是第二个input必须带type</p>
+            </li>
+            <li>
+                表单元素的进一步学习：
+                <ol type="a">
+                    <li>文本框：
+                        <br>
+                        <form>
+                            姓名：<input type="text" name="姓名">
+                            <br>
+                            性别：<input type="text" name="性别">
+                        </form>
+                    </li>
+                    <li>密码框：
+                        <p>input的type属性里面写password，能够将输入的内容变成小黑点（多）或星号</p>
+                        <form>
+                            密码：<input type="password" name="pwd">
+                            <button>提交</button>
+                        </form>
+                    </li>
+                    <li>提交按钮：
+                        <p>当用户单击确认按钮时，表单的内容会被传送到另外一个文件。
+                            <br>表单的动作属性定义了目的文件的文件名。由动作属性定义的这个文件通常会对接收到的输入数据进行相关处理
+                            <br>实际上就是说输入的内容会被提交给服务器
+                        </p>
+                        <form action="url" method="get" name="input">
+                            Username:<input type="text" name="user">
+                            <input type="submit" value="登录">
+                            <!--value表示替换type中的内容显示-->
+                        </form>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+        <li>
+            表单举例：
+            <ol>
+                <form>
+                    <input>
+                    <input type="submit">
+                    <button>自定义</button>
+                </form>
+            </ol>
+        </li>
+    </ol>
+
+
+</body>
+
+</html>

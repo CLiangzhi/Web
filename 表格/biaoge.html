@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格的学习</title>
+</head>
+
+<body>
+    <!--
+        标签之表格
+            标签：<table>    行：<tr>        列:<td>   都成对出现
+            表格实现的快捷键:  table>tr*n>td*m{单元格文本信息}    n和m为数量，花括号里面写什么就会全生成什么
+        表格属性：
+                border  设置表格的边框  ，这里会生成两重边框,以后会用CSS更改
+                width   设置表格的宽度
+                height  设置表格的高度
+    -->
+    <p>表格：</p>
+    <table border="" width="10px" height="10px">
+        <tr>
+            <td>123</td>
+            <td>43245</td>
+        </tr>
+        <tr>
+            <td>235325</td>
+            <td>355465</td>
+        </tr>
+    </table>
+    <!--
+        表格的单元格合并   都是作用于td上
+            水平合并 colspan
+            垂直合并 rowspan
+            水平合并保留左边，删除右边
+            垂直合并保留上边，删除下边
+    -->
+    <!--  cellspacing=""是控制边框的间隔  -->
+    <table border="" align="center" width="500px" height="200px" cellspacing="0">
+        <tr>
+            <td colspan="3">单元格1单元格2单元格3</td>
+            <td>单元格4</td>
+            <td>单元格5</td>
+        </tr>
+        <tr>
+            <td>单元格6</td>
+            <td>单元格7</td>
+            <td>单元格8</td>
+            <td>单元格9</td>
+            <td>单元格10</td>
+        </tr>
+        <tr>
+            <td>单元格11</td>
+            <td>单元格12</td>
+            <td rowspan="3">单元格13<br>单元格18<br>单元格22</td>
+            <td>单元格14</td>
+            <td rowspan="2">单元格15<br>单元格20</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">单元格16单元格17<br>单元格20单元格21</td>
+            <td>单元格19</td>
+        </tr>
+        <tr>
+            <td>单元格24</td>
+            <td>单元格25</td>
+        </tr>
+    </table>
+</body>
+
+</html>
