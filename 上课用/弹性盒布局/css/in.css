@@ -1,0 +1,52 @@
+.box{
+    /* width: 800px; */
+    height: 400px;
+    border: 1px solid;
+    /*加上这句话，加上边框宽为800px，不加这一行，即为边框内部宽为800px*/
+    box-sizing: border-box;
+    display: flex;
+    /*加上这一句将布局改为按水平从右到左排列，不加是从左到右
+    flex-direction: row-reverse;*/
+    /*加上这一句将布局改为按水平从下到上排列，不加是从上到下 
+    flex-direction: column-reverse;*/
+    /*水平均匀分开
+    justify-content: space-around;*/
+    /*居中水平分开
+    justify-content: space-around;
+    align-items: center;
+    */
+    /*左10px，右10px，其余居中*/
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}   
+.box *{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+.a1{
+    background-color: red;
+    /* margin-left: 10px; */
+    /* flex: 1; */
+    /*定义顺序 order: 1; */
+}
+.a2{
+    background-color: pink;
+    /* flex: 3; */
+    /* order: 3; */
+}
+.a3{
+    background-color: green;
+    /* flex: 1; */
+    /* order: 2; */
+}
+.a4{
+    background-color: yellow;
+    /* flex: 3; */
+}
+.a5{
+    background-color: blue;
+    /* margin-right: 10px; */
+    /* flex: 1; */
+}

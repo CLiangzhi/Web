@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+/*版心的大小通常是1000px,并且居中；通栏一般都是宽度占100%*/
+/*浮动:意思就是在原有的位置升高了半层，后面的盒子就挤进来了*/
+.father{
+    background-color: #ccc;
+    border: 1px solid;
+    /*清除浮动：第一种：父盒子设置高度,但是不利于结构内容扩展：height=300px;
+    第二种：给父盒子设浮动，也不经常用，因为会影响后面的内容结构：float:left;
+    第三种：：overfloat:hidden;
+    第四种：display: inline-block;
+    最常用的两个：
+    一：加一个给空盒子:36行
+    二：在父元素后面写上42行
+    */
+}
+.box1,.box2,.box3{
+    height: 50px;
+    border: 1px solid red;
+    margin: 15px;
+    line-height: 50px;
+    padding: 0 10px;
+}
+.box1{
+    background-color: pink;
+    float: left;
+}
+.box2{
+    background-color: rgb(86, 86, 224);
+    float: left;
+}
+.box3{
+    background-color: yellow;
+    float: left;
+}
+/* .clear{
+    clear: both;
+} */
+.father::after{
+    content:"";
+    display: block;
+    clear: both;
+}
