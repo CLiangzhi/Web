@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.father{
+    width: 300px;
+    height: 1300px;
+    background-color: #ccc;
+    border: 1px solid;
+    padding: 10px;
+    margin: 100px auto;
+    position: relative;
+    /*子绝父相*/
+}
+.child01,.child02,.child03{
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid;
+    margin: 10px 0;
+    text-align: center;
+    /*position: static;
+    top: 50px;*/
+}
+.child01{
+    background-color: aquamarine;
+}
+.child02{
+    background-color: pink;
+    /*position: relative;
+    top: 50px;
+    left: 100px;*/
+    position: absolute;
+    bottom:0;
+    /*left: 0;*/
+    right: 0;
+    margin: 0;
+    /*height: 100px;
+    width: 100%;
+    border: 0;
+    opacity:0.5;*/
+}
+.child03{
+    background-color: yellow;
+    position: fixed;
+    right: 0;
+    top: 50px;
+}

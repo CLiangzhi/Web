@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+div.a1{
+   
+    height: 660px;
+    width: 700px;
+    margin: 50px auto;
+    border: 10px solid #ccc;
+    border-radius:50%; 
+    background-image: repeating-radial-gradient(#333 0%,#000 1%);
+    box-sizing: border-box;
+}
+ul{
+    width: 372px;
+    height: 532px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px #000;
+}
+li.a2{
+    height: 250px;
+    background-image: url(../images/yinyue.jpg),url(../images/wenzi.jpg);
+    background-repeat: no-repeat;
+    background-position: 88px 16px,102px 195px;
+    background-color: #fff;
+    border-radius: 30px 30px 0 0;
+}
+li{
+    
+    height: 55px;
+    line-height: 55px;
+    border-bottom: 2px solid #fff;
+    text-align: center;
+    font-size: 18px;
+    background: url(../images/yinfu.png) no-repeat 68px 18px;background-color: #504d58;
+}
+li.a3{
+    border-radius: 0 0 30px 30px;
+}
+a:link,a:visited{
+    color: #d8d6c9;
+}
+a:hover{
+    color: #fff;
+}
