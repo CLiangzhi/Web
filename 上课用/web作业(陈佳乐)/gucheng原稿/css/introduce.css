@@ -1,0 +1,49 @@
+*{
+    /*外边距 0*/
+    margin: 0;
+    /*内边距 0*/
+    padding: 0;
+}
+
+p {
+    font-size: 48px;
+    color: #af201c;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 80px;
+    /*
+    这一句的最后一个参数设置透明度
+    background-color: rgba(211, 16, 20,0.5);
+    */
+}
+div.a1{
+    width: 1000px;
+    background-color: #ccc;
+    /*设置外边距*/
+    margin-top: 65px;
+    /*设置内上边距*/
+    padding-top: 105px;
+    /*设置内左边距*/
+    padding-left: 25px;
+    /*设置内右边距*/
+    padding-right: 25px;
+    /*设置行距*/
+    line-height: 48px;
+    text-align: justify;
+    text-indent: 2px;
+    font-size: 24px;
+    color: aliceblue;
+
+}
+.a1{
+    /*行内元素转换为块级元素*/
+    display: block;
+    margin: 0 auto;
+}
+body{
+    background-image: url(../image/guc2.png);
+    background-repeat: no-repeat;
+    background-position: 400px 600px;
+    background-attachment: fixed;
+    background-size: 1500px 1000px;
+}
