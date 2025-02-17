@@ -1,0 +1,61 @@
+#banner{
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    background-position: center;
+    height: 714px;
+}
+#nav ul{
+    width: 100%;
+    height: 57px;
+    box-sizing: border-box;
+}
+#nav ul li{
+    font-size: 14px;
+    float: left;
+    width: 102px;
+    margin: 25px 20px;
+}
+#nav ul li:first-child{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#nav ul li a:hover{
+    font-size: 18px;
+
+}
+#nav ul li:not(:first-child) a:hover{
+    color: aqua;
+    border-bottom: 3px solid aqua;
+    transition: all 0.5s;
+}
+a{
+    color: #fff;
+}
+.btn{
+    display: block;
+    width: 500px;
+    height: 40px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-size: 15px;
+}
+.text1{
+    font-size: 17px;
+    color: #fff;
+    margin-top: 30px;
+}
+.text2{
+    font-size: 13px;
+    color: #fff;
+    margin-top: 280px;
+}
+#banner_content{
+    /*对父盒子进行设置，对子盒子起作用*/
+    text-align: center;
+    margin-top: 50px;
+}
+

@@ -1,0 +1,323 @@
+#main{
+    margin-top: 100px;
+    border: 1px solid #ccc;
+    height: 500px;
+}
+/*中间*/
+#mid{
+    width: 200px;
+    height: 50px;
+    margin: 35px auto;
+    background-color: #ae1f1b;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 50px;
+    border: 5px solid #fff;
+}
+#mid:hover{
+    box-shadow: 0 0 15px #aaa;
+}
+.view{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+.hover{
+    height: 0px;
+    color: #fff;
+    background-color: rgba(0,0,0, 0.5);
+    text-align: center;
+    position: absolute;
+    top: 70px;
+    transform: rotate(55deg);
+    transition: all 0.5s;
+    overflow: hidden ;
+    z-index: 100;
+}
+.hover h3{
+    border-bottom:2px solid rgba(181,222,245,0.5);
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.view:hover .hover{
+    transform: rotate(0deg);
+    height: 120px;
+}
+.view::before{
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    background-color: rgba(174, 31, 27, 0.3);
+    top: -240px;
+    right: 0;
+    transform-origin: 100% 0;
+    transform: rotate(55deg)translateX(65px);
+    transition: all 0.5s;
+}
+.view:hover::before{
+    top:0;
+}
+.view::after{
+    content: "";
+    position: absolute;
+    width: 360px;
+    height: 360px;
+    background-color: rgba(174, 31, 27, 0.3);
+    bottom: -240px;
+    left: 0;
+    transform-origin:0 100%;
+    transform: rotate(55deg)translateX(-65px); 
+    transition: all 0.5s; 
+}
+.view:hover::after{
+    bottom: 0;
+} 
+/*第二种格式*/
+.view2{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+    float: left;
+    box-shadow: 0 5px 15px   rgba(55, 129, 241,1);
+}
+.hover2 h3{
+    border-bottom:2px solid rgba(181,222,245,0.5);
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.hover2{
+    height: 120px;
+    color: #fff;
+    background-color: rgba(55, 129, 241, 0.5);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(230px);
+    transition: all 0.5s;
+}
+.view2:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px #615d5d;
+}
+.view2:hover .hover2{
+    transform: translateY(110px);
+} 
+/*第三种格式*/
+.view3{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+    float: left;
+    box-shadow: 0 5px 15px   rgb(55, 241, 126);
+}
+.hover3{
+    height: 0px;
+    color: #fff;
+    background-color: rgba(0,0,0, 0.5);
+    text-align: center;
+    position: absolute;
+    top: 70px;
+    transition: all 0.5s;
+    overflow: hidden ;
+
+}
+.hover3 h3{
+    border-bottom:2px solid rgba(181,222,245,0.5);
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.view3:hover .hover3{
+    height: 120px;
+}
+.view3:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #615d5d;
+}
+/*第四种格式*/
+.view4{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+    float: left;
+}
+.hover4 h3{
+    border-bottom:2px solid rgba(181,222,245,0.5);
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.hover4{
+    height: 120px;
+    width: 0px;
+    color: #fff;
+    background-color: rgba(55, 241, 154, 0.5);
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.view4:hover{
+    box-shadow: 0 5px 15px   red;
+} 
+.view4:hover .hover4{
+    width: 230px;
+
+}
+ /*第五种格式*/
+.view5{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all 1.5s;
+    float: left;
+}
+.hover5 h3{
+    border-bottom:2px solid rgba(181,222,245,0.5);
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.hover5{
+    height: 120px;
+    color: #fff;
+    background-color: rgba(241, 55, 160, 0.5);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(230px);
+    transition: all 1s;
+}
+.view5:hover{
+    transform: rotateZ(360deg);
+}
+.view5:hover .hover5{
+    transform: translateY(110px);
+} 
+/*第六种格式*/
+.view6{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+.view6 img{
+    width: 230px;
+    height: 230px;
+    transition: all 0.5s;
+}
+.hover6 h3{
+    border-bottom:2px solid rgba(181,222,245,0.5);
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.hover6{
+    height: 120px;
+    background-color: rgba(55, 241, 163, 0.5);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(230px);
+    transition: all 0.5s;
+}
+.view6:hover img{
+    transform: scale(1.2);
+} 
+.view6:hover .hover6{
+    transform: translateY(110px);
+}
+.view6:hover h3,p{
+    color: burlywood;
+
+}
+/*第七种格式*/
+.view7{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+    float: left;
+}
+.hover7 h3{
+    border-bottom:2px solid rgba(181,222,245,0.5);
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.hover7{
+    height: 120px;
+    color: #fff;
+    background-color: rgba(55, 241, 229, 0.5);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(230px);
+    transition: all 0.5s;
+}
+.view7:hover{
+    opacity: 0.8;
+    transform: rotateY(360deg);
+}
+.view7:hover .hover7{
+    transform: translateY(110px);
+} 
+/*第八种格式*/
+.view8{
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+    position: relative;
+    float: left;
+}
+.view8 img{
+    width: 230px;
+    height: 230px;
+    transition: all 0.5s;
+}
+.hover8 h3{
+    border-bottom:2px solid rgba(181,222,245,0.5);
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.hover8{
+    height: 0;
+    width: 252px;
+    background-color: rgba(139, 241, 55, 0.5);
+    text-align: center;
+    position: absolute;
+    overflow: hidden;
+    top: 120px;
+    left: -22px;
+    transition: all 0.5s;
+}
+.view8:hover img{
+    transform: rotate(10deg) scale(1.1);
+    box-shadow: 0 5px 15px   rgb(222, 241, 55);
+} 
+.view8:hover .hover8{
+    height: 120px;
+    transform: rotate(10deg);
+}

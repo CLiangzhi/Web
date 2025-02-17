@@ -1,0 +1,29 @@
+section p{
+    background-color: #ae1f1b;
+    text-indent: 2em;
+    color: white;
+    font-family: "STxingkai";
+    font-size: 18px;
+    line-height: 30px;
+    padding: 20px;
+    /*两端对齐*/
+    text-align: justify;
+}
+section {
+    padding: 0;
+    background-color: #ae1f1b;
+}
+footer p {
+    text-align: center;
+    font-size: 32px;
+    color: #ae1f1b;
+    font-family: "STxingkai";
+    padding: 20px;
+}
+
+footer .services {
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 50px;
+    color: #374136;
+}

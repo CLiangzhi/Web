@@ -1,0 +1,46 @@
+/*清样式*/
+*{
+    margin:0;
+    padding: 0;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.container h2{
+    font-size: 48px;
+    color: #af201c;
+    line-height: 48px;
+    margin-top: 140px;
+    text-align: center;
+}
+.container .main{
+    background-color: #666;
+    margin-top: 75px;
+    padding: 38px;
+}
+.container .main .text{
+    font-size: 24px;
+    line-height: 48px;
+    color: #fff;
+    text-align: justify;
+}
+/*      第一种
+
+.container .main  .imgge{
+    margin: 0 auto;
+    width: 900px;
+}
+img{
+    width: 100%;
+}
+*/
+
+/*     第二种*/
+.container .main  .imgge{
+    text-align: center;
+}
+img{
+    width: 900px;
+}
