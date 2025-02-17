@@ -1,0 +1,65 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .trangle{
+            margin-top: 100px;
+        }
+        div{
+            border-width: 90px;
+            border-style: solid;
+            border-color: transparent transparent transparent green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="trangle">小三角</div>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>三角形缺口矩形示例</title>
+<style>
+  .corner-缺口 {
+    width: 200px; /* 矩形的宽度 */
+    height: 50px; /* 矩形的高度 */
+    background-color: orange; /* 矩形的背景颜色 */
+    position: relative; /* 相对定位 */
+    overflow: hidden; /* 隐藏溢出的部分 */
+  }
+
+  .corner-缺口:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid orange; /* 与矩形颜色相同 */
+    border-top: 20px solid transparent; /* 透明，形成三角形 */
+    border-bottom: 20px solid white; /* 缺口内部颜色 */
+  }
+</style>
+</head>
+<body>
+
+<div class="corner-缺口">
+  第三个是分公司
+</div>
+
+</body>
+</html>

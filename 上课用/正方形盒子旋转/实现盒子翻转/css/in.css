@@ -1,0 +1,35 @@
+body{
+    background-color: #f7f7f7;
+    perspective: 550px;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 200px auto;
+    transform-style:preserve-3d ;
+    transition: all 0.5s;
+}
+.box>div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    line-height: 200px;
+    font-size: 24px;
+}
+.front{
+    background-color: pink;
+    /*层叠关系（必须在有定位的情况下）*/
+    z-index: 1;
+    /*将该盒子的背面隐藏，也就是说当该盒子翻转时背面没东西*/
+    backface-visibility: hidden;
+} 
+.back{
+    background-color: purple;
+    /*将盒子提前反过来，保证翻转之后字体的正常的*/
+    transform: rotateY(180deg);
+}
+.box:hover{
+    transform:rotateY(180deg);
+}

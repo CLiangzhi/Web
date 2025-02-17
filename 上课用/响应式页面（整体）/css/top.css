@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    /*和自动宽度包括边框、padding、content*/
+    box-sizing: border-box;
+}
+
+.fluid {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+#header {
+    padding: 33px 0;
+    background-color: #7ddf6c;
+    /* position: relative; */
+}
+
+#header nav ul {
+    /*弹性盒布局*/
+    display: flex;
+    width: 40%;
+    /*等距离分开*/
+    justify-content: space-around;
+    font-size: 1.25em;
+    font-family: serif;
+}
+
+#header nav ul li a {
+    color: #fff;
+}
+
+#header nav ul li a:hover {
+    color: #000;
+    transition: all 0.5s;
+}
+
+#header .logo {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    z-index: 2;
+}
+
+
+/*选定特定的input标签来修饰（利用type类型）*/
+
+#header nav input[type="checkbox"],
+.menu {
+    position: absolute;
+    left: 2%;
+    top: 10px;
+    /*让其不可见（在刚开始的时候，后期会用修饰来界定什么时候会出现）*/
+    display: none;
+}
+
+
+/*banner部分*/
+
+#banner {
+    background: url("../images/banner.jpg") no-repeat;
+    background-size: cover;
+    height: 680px;
+    position: relative;
+}
+
+#banner .banner_info {
+    background-color: rgba(255, 255, 255, 0.65);
+    position: absolute;
+    right: 15px;
+    top: 300px;
+    width: 36%;
+    padding: 22px;
+}
+
+#banner .banner_info h3 {
+    font-size: 1.5em;
+    color: #159400;
+}
+
+#banner .banner_info p {
+    font-size: 0.875em;
+    line-height: 1.8em;
+    margin: 9px 0 15px;
+}
+
+#banner .banner_info a {
+    display: inline-block;
+    background-color: #159400;
+    padding: 7px 15px;
+    color: #fff;
+}
+
+#banner .banner_info a:hover {
+    background-color: #6cd79c;
+    transition: all 0.5;
+}
+
+
+/*mission部分*/
+
+#mission {
+    background-color: #fffdd2;
+    padding: 80px 0;
+}
+
+#mission .mission_header h3 {
+    text-align: center;
+    font-size: 2em;
+    font-family: serif;
+    color: #159400;
+}
+
+#mission .mission_container {
+    margin-top: 35px;
+    display: flex;
+}
+
+.mission_left,
+.mission_right {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.mission_left img {
+    width: 100%;
+}
+
+.mission_one{
+    margin-bottom: 30px;
+}
+
+.mis_left{
+    float: left;
+    width: 15%;
+}
+
+.mis_right{
+    float: right;
+    width: 82%;
+}
+
+.mission_one::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.mis_right h3{
+    font-size: 1.25em;
+    color: #7ddf6c;
+}
+
+.mis_right p{
+    font-size: 0.875em;
+    line-height: 1.8em;
+    margin-top: 12px;
+}
+
+/*footer*/
+#footer {
+    padding: 18px 0;
+    background-color: #7ddf6c;
+}
+
+#footer p {
+    margin-top: 9px;
+    text-align: center;
+    font-size: 0.875em;
+    color: #fff;
+}
+#footer p a {
+    color: #030303;
+}
+
+#footer p a:hover{
+    color: #fff;
+    transition: all 0.5s;
+}
+@media(max-width: 1280px){
+    #header{
+        padding: 24px 0;
+        background-color: #7ddf6c;
+    }
+    /*不加#header是错的，因为前面写的时候“#header .logo”的权重为110，而这里如果只写“.logo”，那么权重为10，按照优先级，权重为10的改不了权重为110的样式，所以以后写的时候尽量直接按照上面的样式写，这样不会导致出现优先级问题(不止在媒体查询中是这样，在任何地方都是这样)*/
+    #header .logo {
+        width: 13%;
+        position: absolute;
+        top: 0;
+        right: 6%;
+        z-index: 2;
+    }    
+    #banner{
+        height: 456px;
+    }
+    #banner .banner_info{
+        position: absolute;
+        right: 15px;
+        top: 200px;
+        width: 36%;
+        padding: 22px;
+    }
+}
+@media(max-width:1024px){
+    #hedaer nav ul{
+        font-size: 1em;
+    }
+}
+@media(max-width:768px){
+    #banner{
+        height: 300px;
+    }
+    #banner .banner_info{
+        top: 88px;
+        width: 55%;
+        padding: 13px;
+    }
+    #banner .banner_info h3{
+        font-size: 1em;
+    }
+    #banner .banner_info p{
+        font-size: 0.75em;
+    }
+    #banner .banner_info a{
+        font-size: 0.75em;
+    }
+    .menu {
+        display: block;
+    }
+    #header nav ul{
+        display: none;
+    }
+    #header nav input[type="checkbox"]:checked~ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        font-size: 1.25em;
+        line-height: 1.4em;
+    }
+    #mission .mission_container{
+        flex-direction: column;
+    }
+    .mission_right{
+        margin-top: 30px;
+    }
+    .mis_left{
+        width: 13%;
+    }
+}
