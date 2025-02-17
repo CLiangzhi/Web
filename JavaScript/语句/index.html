@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. if语句
+
+        // if(条件){
+        //     //条件为真时执行的代码
+        // }
+        // else{
+        //     //条件为假时执行的代码
+        // }
+
+        var age = 18;
+        if (age >= 18) {
+            console.log('成年');
+        }
+        else {
+            console.log('未成年');
+        }
+
+        // if(条件){
+        //     //条件为真时执行的代码
+        // }
+        // else if(条件){
+        //     //条件为真时执行的代码
+        // }
+        // else{
+        //     //条件为假时执行的代码
+        // }
+
+        var score = 80;
+        if (score >= 90) {
+            console.log('优秀');
+        }
+        else if (score >= 80) {
+            console.log('良好');
+        }
+        else if (score >= 70) {
+            console.log('中等');
+        }
+        else if (score >= 60) {
+            console.log('及格');
+        }
+        else {
+            console.log('不及格');
+        }
+
+        // 2. switch语句
+
+        // switch(表达式){
+        //     case 值1:
+        //         //表达式等于值1时执行的代码
+        //         break;
+        //     case 值2:
+        //         //表达式等于值2时执行的代码
+        //         break;
+        //     default:
+        //         //表达式不等于任何一个值时执行的代码
+        // }
+
+        var num = 3;
+        switch (num) {
+            case 1:
+                console.log('星期一');
+                break;
+            case 2:
+                console.log('星期二');
+                break;
+            case 3:
+                console.log('星期三');
+                break;
+            case 4:
+                console.log('星期四');
+                break;
+            case 5:
+                console.log('星期五');
+                break;
+            case 6:
+                console.log('星期六');
+                break;
+            case 7:
+                console.log('星期日');
+                break;
+            default:
+                console.log('输入有误');
+        }
+
+        // 3. for循环
+        // for(初始化变量;条件;操作变量)
+        // {
+        //     //循环执行的代码
+        // }
+
+        for (var i = 1; i <= 10; i++) {
+            console.log(i);
+        }
+
+        // 4. while循环 先判断 再循环
+        // while(条件)
+        // {
+        //     //循环执行的代码
+        // }
+
+        var j = 1;
+        while (j <= 10) {
+            console.log(j);
+            j++;
+        }
+
+        // 5. do...while循环 先循环 再判断
+        // do
+        // {
+        //     //循环执行的代码
+        // }
+        // while(条件)
+
+        var k = 1;
+        do {
+            console.log(k);
+            k++;
+        }
+        while (k <= 10);
+    </script>
+</body>
+
+</html>

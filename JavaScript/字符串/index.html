@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 字符串的创建
+        var str1 = 'hello';
+        var str2 = "hello";
+        var str = "我\"喜欢\"学习"
+        var st = "红楼梦是\
+        我国\
+        四大名著之一"//换行要加转义字符
+        var str3 = `hello`;//模板字符串 用键盘上面波浪线上的引号
+        var str4 = new String('hello');//构造函数创建
+        // 字符串的拼接
+        var str5 = str1 + str2;
+        var str6 = str1.concat(str2);
+        console.log(str6);
+        // 字符串的重复
+        var str7 = str1.repeat(3);
+        // 字符串的截取
+        var str8 = str1.slice(1, 3);
+        var str9 = str1.substring(1, 3);
+        var str10 = str1.substr(1, 3);
+        // 字符串的替换
+        var str11 = str1.replace('h', 'H');
+        console.log(str11);
+        // 字符串的分割
+        var str12 = str1.split('e');
+        console.log(str12);
+        // 字符串的查找
+        var str13 = str1.indexOf('e');
+        console.log(str13);
+        var str14 = str1.lastIndexOf('e');
+        console.log(str14);
+        // 字符串的转换
+        var str15 = str1.toUpperCase();
+        var str16 = str1.toLowerCase();
+        // 字符串的判断
+        var str17 = str1.startsWith('h');
+        var str18 = str1.endsWith('o');
+        var str19 = str1.includes('e');
+        // 字符串的长度
+        var str20 = str1.length;
+        // 字符串的遍历
+        for (var i = 0; i < str1.length; i++) {
+            console.log(str1[i]);
+        }
+        // 字符串的模板字符串
+        var str21 = `hello ${str1}`;
+        console.log(str21);
+
+
+
+        //字符串的常用方法
+        var strs = 'itbaizhan';
+        //charAt() 返回指定位置的字符
+        console.log(strs.charAt(2));
+        console.log(strs.charAt(-2))//超出范围后返回空字符串
+        //charCodeAt() 返回指定位置的字符的Unicode编码
+        console.log(strs.charCodeAt(2));
+        //concat() 连接两个或多个字符串
+        //fromCharCode() 从字符编码创建一个字符串
+        //indexOf() 返回某个指定的字符串值在字符串中首次出现的位置
+        console.log(strs.indexOf('t'));
+        //lastIndexOf() 从后向前搜索字符串
+        //match() 找到一个或多个正则表达式的匹配
+        //replace() 替换与正则表达式匹配的子串
+        //search() 检索与正则表达式相匹配的值
+        //slice() 提取字符串的片断，并在新的字符串中返回被提取的部分
+        //split() 把字符串分割为字符串数组
+        console.log(strs.split(''));
+        //startsWith() 检查字符串是否以指定的子字符串开始
+        //substring(子字符串的起始位置,子字符串的结束位置) 提取字符串中介于两个指定下标之间的字符
+        console.log(strs.substring(2, 4));
+        //substr(子字符串的起始位置,子字符串的长度) 返回一个新的字符串，该字符串是此字符串的一个子字符串
+        console.log(strs.substr(2, 4));
+        //toLowerCase() 把字符串转换为小写
+        //toUpperCase() 把字符串转换为大写
+        console.log(strs.toUpperCase())
+        //trim() 去除字符串两端的空白
+        var strs1 = '  itbaizhan  ';
+        console.log(strs1.trim());
+        //valueOf() 返回某个字符串对象的原始值 原来怎么样就是怎么样
+    </script>
+</body>
+</html>

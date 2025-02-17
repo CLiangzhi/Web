@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS的语句 标识符 变量</title>
+</head>
+
+<body>
+        <script>
+            //js中的语句一般是以;结尾
+            var num = 10; //一个语句 用来定义变量
+            //js中的标识符（变量名）必须以字母、下划线、$开头 后面可以是字母、下划线、$、数字 中文也是合法的标识符但不建议使用 js中的变量名是区分大小写的
+            var age = 20;
+            var people_zhangsan = "张三";
+            var $zahngsan = "张三";
+            var _zhangsan = "张三";
+            var 张三 = "张三";
+            //变量 用var来声明变量 语法：var 变量名 = 变量值;
+            num = 30; //变量可以重复赋值
+            //打印
+            console.log(num);//方便在浏览器控制台看变量的值
+            //变量提升
+            console.log(num1);//如果打印在变量前面 并不会报错 会打印一个undefined
+            var num1 = 10;
+            var name;
+            console.log(name);//如果变量没有赋值 那么打印出来也是undefined
+            /*具体来说就是 js在执行代码之前 会先扫描代码 找到所有的var关键字 然后把变量声明提升到代码的最前面 如下
+            console.log(num1);//undefined
+            var num1 = 10;
+            相当于
+            var num1;
+            console.log(num1);//undefined
+            num1 = 10;*/
+
+
+
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 260px;
+            border: 1px solid ;
+            margin: 100px auto;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function getRect(){
+            var x = document.getElenmetById("bounding");//获取对象元素
+            var objRect=x.getBoundingClientRect();//获取按钮位置
+            alert("top"+objRect.top+"bottom"+objRect.bottom+"right"+objRect.right+"left"+objRect.left);
+        }
+    </script>
+</head>
+<body>
+    <div id="bounding" onmouseover="getRect()">返回本按钮距离浏览器左上角的值</div>
+</body>
+</html>
