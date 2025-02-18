@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // Data对象是一个构造函数 用于创建表示日期和时间的对象。
+        // Data对象表示一个特定的日期和时间 可以表示从1970年1月1日00:00:00 UTC到现在的毫秒数。
+        // 创建一个Date对象 可以使用Date构造函数 也可以使用Date对象的静态方法。
+        // Date构造函数可以接受一个参数 表示日期和时间的字符串 也可以接受一个参数 表示日期和时间的毫秒数 如果不传递参数 则创建一个表示当前日期和时间的Date对象
+
+        // Data.now() 方法返回自1970年1月1日00:00:00 UTC到当前时间的毫秒数
+        console.log(Date.now());
+
+        // Data.parse() 方法返回1970年1月1日00:00:00 UTC到指定日期的毫秒数
+        console.log(Date.parse('2020-01-01'));
+
+        // Data.UTC() 方法返回指定日期的毫秒数
+        console.log(Date.UTC(2020, 0, 1));
+
+        // Data().getFullYear() 返回当前年份 显示四位数
+        console.log(new Date().getFullYear());
+
+        //Data().getYear() 返回距离1900年的年数
+        console.log(new Date().getYear());
+
+        // Data().getMonth() 方法返回Date对象的月份 默认返回的是0-11 即0表示1月 11表示12月 若想要显示1-12月 则需要加1
+        console.log(new Date().getMonth() + 1);
+
+        // Data().getDate() 方法返回Date对象的天数 也就是每个月的几号
+        console.log(new Date().getDate());
+
+        // Data().getDay() 方法返回Date对象的星期几 默认返回的是0-6 即0表示星期日 6表示星期六 若想要显示1-7 则需要加1
+        console.log(new Date().getDay() + 1);
+
+        // Data().getHours() 方法返回Date对象的小时数 默认返回0-23
+        console.log(new Date().getHours());
+
+        // Data().getMinutes() 方法返回Date对象的分钟数 默认返回0-59
+        console.log(new Date().getMinutes());
+
+        // Data().getSeconds() 方法返回Date对象的秒数 默认返回0-59
+        console.log(new Date().getSeconds());
+
+        //下面是返回当前的时间
+        console.log(new Date()) // GMT+0时区的时间 我们运行的时候显示的是中国标准时间
+        console.log('当前时间是 : ' + new Date().getFullYear() + '年' + (new Date().getMonth() + 1) + '月' + new Date().getDate() +  '日 星期' + new Date().getDay() + ' ' + new Date().getHours() + '点' + new Date().getMinutes() + '分' + new Date().getSeconds() + '秒');
+
+        // Data.getMilliseconds() 方法返回Date对象的毫秒数 默认返回0-999
+        console.log(new Date().getMilliseconds());
+
+        // Data.getTime() 方法返回Date对象的时间戳
+        //时间戳是指1970年1月1日00:00:00 UTC到当前时间的毫秒数
+        console.log(new Date().getTime());
+    </script>
+</body>
+
+</html>
